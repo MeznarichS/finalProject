@@ -13,7 +13,7 @@ The toughest part was...
 ```Java
 //insert code
 ```
-This is the code that moves down the tree as decisions are made. It gets each value from both left and right and also casts the value to a String. If the progressions arrives at the leaf nodes, those values are printed.
+This is my code
 ## Built With
 
 * [Processing](https://processing.org/) - The IDE used
