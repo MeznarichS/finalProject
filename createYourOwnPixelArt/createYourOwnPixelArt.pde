@@ -102,5 +102,6 @@ void mousePressed() {
   y = mouseY;
   if (x > 1000)
     select=selectColor(x, y);
-  fillColor(x, y, select);
+  else 
+    fillColor(x, y, select);
 }
