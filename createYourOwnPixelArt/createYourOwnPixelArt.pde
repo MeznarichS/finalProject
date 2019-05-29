@@ -71,7 +71,7 @@ public color selectColor(int x, int y) {
     else if (y > 475 && y < 525)
       select=purple;
   }
-  if (x > 1125 && x < 1175) {
+  else if (x > 1125 && x < 1175) {
     if (y > 275 && y < 325)
       select=red;
     else if (y > 325 && y < 375)
@@ -89,7 +89,7 @@ public color selectColor(int x, int y) {
 void fillColor(int x, int y, color c) {
   for (int i=0; i<=1000; i+=25) {
     for (int j=0; j<=1000; j+=25) {
-      if ((x > i && x < i+10) && (y > j && y < j+10)) {
+      if ((x > i && x < i+25) && (y > j && y < j+25)) {
         fill(c);
         rect(i, j, 25, 25);
       }
@@ -100,8 +100,10 @@ void fillColor(int x, int y, color c) {
 void mousePressed() {
   x = mouseX;
   y = mouseY;
-  if (x > 1000)
-    select=selectColor(x, y);
-  else 
-    fillColor(x, y, select);
+  select=selectColor(x, y);
+  if (mouseButton == RIGHT) {
+    stroke(150);
+    select=color(255);
+  }
+  fillColor(x, y, select);
 }
