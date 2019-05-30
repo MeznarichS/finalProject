@@ -9,7 +9,6 @@ color purple = color(172,146,236);
 color pink = color(236,135,192);
 color gray = color(204,209,217);
 
-
 color select;
 
 int x, y;
