@@ -1,13 +1,15 @@
-color pink = color(255, 0, 255);
-color red = color(255, 0, 0);
-color orange = color(255, 128, 0);
-color yellow = color(255, 255, 0);
-color lightGreen = color(0, 255, 0);
-color darkGreen = color(0, 153, 0);
-color lightBlue = color(0, 255, 255);
-color darkBlue = color(0, 0, 255);
-color purple = color(127, 0, 255);
-color gray = color(128, 128, 128);
+color red = color(237,85,101);
+color orange = color(252,110,81);
+color yellow = color(255,206,84);
+color green = color(160,212,104);
+color mint = color(72,207,173);
+color lightBlue = color(79,193,233);
+color darkBlue = color(93,156,236);
+color purple = color(172,146,236);
+color pink = color(236,135,192);
+color gray = color(204,209,217);
+
+
 color select;
 
 int x, y;
@@ -36,23 +38,23 @@ void blankBoard() {
 }
 
 void colors() {
-  fill(pink);
-  rect(1075, 275, 50, 50);
   fill(red);
-  rect(1125, 275, 50, 50);
+  rect(1075, 275, 50, 50);
   fill(orange);
-  rect(1075, 325, 50, 50);
+  rect(1125, 275, 50, 50);
   fill(yellow);
+  rect(1075, 325, 50, 50);
+  fill(green);
   rect(1125, 325, 50, 50);
-  fill(lightGreen);
+  fill(mint);
   rect(1075, 375, 50, 50);
-  fill(darkGreen);
-  rect(1125, 375, 50, 50);
   fill(lightBlue);
-  rect(1075, 425, 50, 50);
+  rect(1125, 375, 50, 50);
   fill(darkBlue);
-  rect(1125, 425, 50, 50);
+  rect(1075, 425, 50, 50);
   fill(purple);
+  rect(1125, 425, 50, 50);
+  fill(pink);
   rect(1075, 475, 50, 50);
   fill(gray);
   rect(1125, 475, 50, 50);
@@ -61,25 +63,25 @@ void colors() {
 public color selectColor(int x, int y) {
   if (x > 1075 && x < 1125) {
     if (y > 275 && y < 325)
-      select=pink;
-    else if (y > 325 && y < 375)
-      select=orange;
-    else if (y > 375 && y < 425)
-      select=lightGreen;
-    else if (y > 425 && y < 475)
-      select=lightBlue;
-    else if (y > 475 && y < 525)
-      select=purple;
-  }
-  else if (x > 1125 && x < 1175) {
-    if (y > 275 && y < 325)
       select=red;
     else if (y > 325 && y < 375)
       select=yellow;
     else if (y > 375 && y < 425)
-      select=darkGreen;
+      select=mint;
     else if (y > 425 && y < 475)
       select=darkBlue;
+    else if (y > 475 && y < 525)
+      select=pink;
+  }
+  else if (x > 1125 && x < 1175) {
+    if (y > 275 && y < 325)
+      select=orange;
+    else if (y > 325 && y < 375)
+      select=green;
+    else if (y > 375 && y < 425)
+      select=lightBlue;
+    else if (y > 425 && y < 475)
+      select=purple;
     else if (y > 475 && y < 525)
       select=gray;
   }
