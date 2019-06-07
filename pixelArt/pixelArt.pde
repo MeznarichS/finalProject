@@ -11,16 +11,6 @@ void draw() {
   noStroke();
   stich();
   dinosaur();
-  System.out.println(mouseX+", "+mouseY);
-  eeyore();
-  toothless();
-  
-  /*
-  for (int i=10; i<=250; i+=10) {
-    rect(360, i, 10, 10);
-  }
-  rect(460, 10, 10, 10);
-  */
 }
 
 void stich() {
@@ -36,26 +26,6 @@ void dinosaur() {
   darkGreenSquares(x);
   pinkSquares2(x);
   greenSquares(x);
-}
-
-void eeyore() {
-  blueSquares2();
-  /*
-  pinkSquares3();
-  blackSquares3();
-  whiteSquares(); ??
-  */
-}
-
-void toothless() {
-  /*
-  graySquares();
-  blackSquares3();
-  greenSquares();
-  fill(255);
-  rect(x1, y, 10, 10);
-  rect(x2, y, 10, 10);
-  */
 }
 
 //stitch ========================================================
@@ -553,18 +523,4 @@ void darkGreenSquares(int x) {
   rect(660-x, 150, 10, 10);
   rect(550-x, 220, 10, 10);
   rect(600-x, 220, 10, 10);
-}
-
-
-//eeyore ========================================================
-void blueSquares2() {
-  fill(blue);
-}
-
-void pinkSquares3() {
-  fill(pink);
-}
-
-void blackSquares3() {
-  fill(0);
 }
